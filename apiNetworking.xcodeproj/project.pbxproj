@@ -13,6 +13,10 @@
 		C8B9F0022AE6EBB000B4618B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B9F0002AE6EBB000B4618B /* Main.storyboard */; };
 		C8B9F0042AE6EBB200B4618B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B9F0032AE6EBB200B4618B /* Assets.xcassets */; };
 		C8B9F0072AE6EBB200B4618B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B9F0052AE6EBB200B4618B /* LaunchScreen.storyboard */; };
+		C8B9F0132AE6EC0A00B4618B /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9F0122AE6EC0A00B4618B /* ApiManager.swift */; };
+		C8B9F0152AE6ED3D00B4618B /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9F0142AE6ED3D00B4618B /* Joke.swift */; };
+		C8B9F0172AE6EE7200B4618B /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9F0162AE6EE7200B4618B /* Fruits.swift */; };
+		C8B9F0192AE6F23D00B4618B /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9F0182AE6F23D00B4618B /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		C8B9F0032AE6EBB200B4618B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8B9F0062AE6EBB200B4618B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8B9F0082AE6EBB200B4618B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8B9F0122AE6EC0A00B4618B /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		C8B9F0142AE6ED3D00B4618B /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		C8B9F0162AE6EE7200B4618B /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
+		C8B9F0182AE6F23D00B4618B /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		C8B9EFF92AE6EBB000B4618B /* apiNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				C8B9F00E2AE6EBC000B4618B /* API */,
+				C8B9F0112AE6EBF500B4618B /* UI */,
 				C8B9EFFA2AE6EBB000B4618B /* AppDelegate.swift */,
 				C8B9EFFC2AE6EBB000B4618B /* SceneDelegate.swift */,
-				C8B9EFFE2AE6EBB000B4618B /* ViewController.swift */,
 				C8B9F0002AE6EBB000B4618B /* Main.storyboard */,
 				C8B9F0032AE6EBB200B4618B /* Assets.xcassets */,
 				C8B9F0052AE6EBB200B4618B /* LaunchScreen.storyboard */,
 				C8B9F0082AE6EBB200B4618B /* Info.plist */,
 			);
 			path = apiNetworking;
+			sourceTree = "<group>";
+		};
+		C8B9F00E2AE6EBC000B4618B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C8B9F00F2AE6EBC700B4618B /* models */,
+				C8B9F0102AE6EBCE00B4618B /* services */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C8B9F00F2AE6EBC700B4618B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				C8B9F0162AE6EE7200B4618B /* Fruits.swift */,
+				C8B9F0142AE6ED3D00B4618B /* Joke.swift */,
+				C8B9F0182AE6F23D00B4618B /* Weather.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		C8B9F0102AE6EBCE00B4618B /* services */ = {
+			isa = PBXGroup;
+			children = (
+				C8B9F0122AE6EC0A00B4618B /* ApiManager.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		C8B9F0112AE6EBF500B4618B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C8B9EFFE2AE6EBB000B4618B /* ViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B9F0132AE6EC0A00B4618B /* ApiManager.swift in Sources */,
+				C8B9F0152AE6ED3D00B4618B /* Joke.swift in Sources */,
+				C8B9F0172AE6EE7200B4618B /* Fruits.swift in Sources */,
 				C8B9EFFF2AE6EBB000B4618B /* ViewController.swift in Sources */,
 				C8B9EFFB2AE6EBB000B4618B /* AppDelegate.swift in Sources */,
 				C8B9EFFD2AE6EBB000B4618B /* SceneDelegate.swift in Sources */,
+				C8B9F0192AE6F23D00B4618B /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
